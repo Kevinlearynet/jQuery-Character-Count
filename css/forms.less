@@ -1,0 +1,118 @@
+@import url("elements.less");
+
+/* =Global
+-------------------------------------------------------------- */
+body {
+	font:14px/1.6em "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/* =Layout
+-------------------------------------------------------------- */
+.wrapper {
+	width:940px;
+	margin:50px auto;
+}
+
+
+/* =Forms
+-------------------------------------------------------------- */
+
+/** Word counter */
+.wordcount-total {
+	font-size:12px;
+	color:#666;
+	font-weight:normal;
+	color:@positive;
+	&.over {
+		color:@negative;
+	}
+}
+
+/** Form styles */
+.account-form {
+	.rounded;
+	padding:6px 20px 3px;
+	background:#dfeae9;
+	border:1px solid #cedad9;
+	fieldset {
+		padding:0;
+		margin:0;
+		border:none;
+		legend {
+			font-weight:bold;
+			font-size:18px;
+			margin:0 0 10px;
+			display:block;
+		}
+	}
+	ol {
+		list-style:none;
+		padding:0;
+		li {
+			clear:left;
+			padding:7px 0;
+		}
+		label {
+			float:left;
+			width:20%;
+			color:#555;
+		}
+		input, textarea {
+			margin:0;
+			padding:5px;
+			.rounded(3px);
+			border:none;
+			width:60%;
+			.inner-shadow( 1px, 2px, 3px, 0.05 );
+			border:1px solid #cedad9;
+		}
+		button {
+			margin-left:20%;
+		}
+	}
+	.wordcount-total {
+		display:block;
+		margin-left:20%;
+	}
+	
+}
+
+/** Buttons */
+input[type="submit"],
+input[type="button"],
+button,
+.button {
+	/** Browser reset */
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	line-height:1;
+	
+	/** Sizing and layout */
+	display:inline-block;
+	padding:6px 12px;
+	.rounded( 15px );
+	.box-shadow( 1px 1px 3px rgba(0,0,0,0.25) );
+	cursor:pointer;
+	outline:none;
+	
+	/** Colors */
+	color:#fff;
+	text-decoration:none;
+	font-size:12px;
+	text-transform:uppercase;
+	font-weight:bold;
+	text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+	.gradient( #00a0e3, #00b4ff, #087fb1 );
+	border:none;
+	&:hover {
+		.gradient( #25bd5d, #28e36d, #237240 );
+	}
+	&:active {
+		.gradient( #858585, #777, #333 );
+	}
+}
