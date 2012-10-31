@@ -24,11 +24,11 @@ This will automatically add a `span` element after the provided `textarea` field
 
 A series of settings have been included for advanced scenarios and customizations:
 
-`$('textarea.wordcount-field').characterCount({
-	'countType'		: 'characters', 		// Other option is "words"
-	'countClass'	: 'wordcount-total',	// Classname used for the counter span
-	'limit' 		: 150
-});`
+	$('textarea.wordcount-field').characterCount({
+		'countType'		: 'characters', 		// Other option is "words"
+		'countClass'	: 'wordcount-total',	// Classname used for the counter span
+		'limit' 		: 150
+	});
 
 ## License
 
